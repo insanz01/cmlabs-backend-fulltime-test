@@ -8,7 +8,7 @@ go test ./test
 if [ $? -eq 0 ]; then
   # Jika go test berhasil, jalankan perintah go build
   echo "Running go build..."
-  go build -o app
+  go build -o ./dist/app
   echo "Build successful! Executable binary created as app"
 else
   # Jika go test gagal, tampilkan pesan kesalahan dan hentikan build
