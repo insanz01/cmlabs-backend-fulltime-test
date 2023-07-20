@@ -9,7 +9,7 @@ import (
 func main() {
 	fmt.Println("Anda dapat menjalankan dengan go test ./test")
 
-	cmlabs.Fizzbuzz(100)
+	cmlabs.PrintFizzbuzz(100)
 
 	word := "KASUR RUSAK"
 	palindromeResult := fmt.Sprintf("Check Palindrome (%s) => (%t)", word, cmlabs.Palindrome(word))

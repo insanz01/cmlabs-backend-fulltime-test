@@ -59,13 +59,10 @@ func TestFizzBuzz(t *testing.T) {
 				t.Errorf("Hasil (%t) tidak sesuai dengan yang diharapkan (%t)", result, fizzBuzz.Expect)
 			}
 		case "FizzBuzz":
-			fizzResult := cmlabs.Fizz(fizzBuzz.Number)
-			buzzResult := cmlabs.Buzz(fizzBuzz.Number)
+			fizzBuzzResult := cmlabs.FizzBuzz(fizzBuzz.Number)
 
-			if fizzResult == buzzResult {
-				if fizzResult != fizzBuzz.Expect {
-					t.Errorf("Hasil (%t) tidak sesuai dengan yang diharapkan (%t)", fizzResult, fizzBuzz.Expect)
-				}
+			if fizzBuzzResult != fizzBuzz.Expect {
+				t.Errorf("Hasil (%t) tidak sesuai dengan yang diharapkan (%t)", fizzBuzzResult, fizzBuzz.Expect)
 			}
 		}
 	}
