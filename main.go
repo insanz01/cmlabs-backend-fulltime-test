@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	fmt.Println("Anda dapat menjalankan dengan go test")
+	fmt.Println("Anda dapat menjalankan dengan go test ./test")
 
 	cmlabs.Fizzbuzz(100)
 
@@ -16,5 +16,5 @@ func main() {
 
 	fmt.Println(palindromeResult)
 
-	fmt.Println("Anda dapat menjalankan dengan go test")
+	fmt.Println("Anda dapat menjalankan dengan go test ./test")
 }
